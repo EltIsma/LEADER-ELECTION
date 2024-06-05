@@ -1,0 +1,16 @@
+global:
+  scrape_interval:     15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'app1'
+    static_configs:
+    - targets: ['app1:2112']
+
+  - job_name: 'app2'
+    static_configs:
+    - targets: ['app2:2112']
+
+  - job_name: 'app3'
+    static_configs:
+    - targets: ['app3:2112']
